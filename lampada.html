@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada</title>
+    <style>
+         body{
+            background-color: rgba(117, 233, 239, 0.721);     
+        }
+          main{
+            display: block;
+            background-color: white;
+            width: 600px;
+            height: 300px;
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 5px black;   
+        } 
+    </style>
+</head>
+<body>   
+<main>
+<h1>Lâmpada / Acende / Apaga/ Quebra</h1>
+        
+<img src="lampada-apagada.jpg" alt="Lâmpada" id="luz" 
+onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" 
+onclick="mudaLampada(3)"/>
+</main>
+
+<script>
+var quebrada = false;
+
+function mudaLampada(tipo){
+ console.log(quebrada)   
+if(quebrada = false){
+
+if (tipo == 1){
+arquivo = 'lampada-acesa.jpg';
+}
+if (tipo == 2){
+arquivo = 'lampada-apagada.jpg';   
+}
+if (tipo == 3){
+arquivo =  'lampada-quebrada.jpg';  
+quebrada = true;
+}   
+}
+}
+ </script>   
+</body>
+</html>
